@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "/dist/team-notes-project/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

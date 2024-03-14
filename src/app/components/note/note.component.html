@@ -1,0 +1,26 @@
+<div class="note">
+  <span style="text-decoration: underline; font-size: larger; font-weight: 500">
+    {{ note.name }}
+  </span>
+  <span style="flex-grow: 1">{{ note.message }}</span>
+  <span style="text-align: end; font-size: small; padding-top: 10px">{{
+    getDateString(note.timestamp)
+  }}</span>
+
+  <div class="buttons-container">
+    <button (click)="deleteData(note)" class="button">
+      <img
+        src="../../../assets/icons/trash-solid.svg"
+        width="25px"
+        height="25px"
+      />
+    </button>
+    <button (click)="editData(note)" class="button">
+      <img
+        src="../../../assets/icons/pen-to-square-solid.svg"
+        width="25px"
+        height="25px"
+      />
+    </button>
+  </div>
+</div>
